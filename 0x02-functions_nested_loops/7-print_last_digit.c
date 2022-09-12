@@ -14,5 +14,5 @@ int print_last_digit(int c)
     {
         last = last * -1;
     }
-    return last;
+    return (last);
 }
