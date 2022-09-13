@@ -3,7 +3,6 @@
 #include "main.h"
 /**
 * print_alphabet_x10 - Prints the alphabet 10 times to the stdout
-* @c:The alphabet characters
 * Return 0 on success
 */
 

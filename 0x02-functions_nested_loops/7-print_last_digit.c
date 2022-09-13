@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-/*
+/**
 * print_last_digit - Prints last digit of a number
 * @c: The number to check
 * Return: The last digit
