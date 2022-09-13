@@ -9,11 +9,14 @@
 
 int _abs(int c)
 {
+	int abs;
+
 	if (c < 0)
 	{
-		int abs = c * -1;
+		abs = c * -1;
 		return (abs);
 	}
+
 	else
 	{
 		return (c);
