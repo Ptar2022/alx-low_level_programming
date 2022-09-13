@@ -5,7 +5,7 @@
 /**
 * _isalpha - Checks if alphabet, lower or upper
 * @c:Integer variable
-* Return 1 if condition met, 0 otherwise
+* Return: 1 if condition met, 0 otherwise
 */
 
 int _isalpha(int c)
