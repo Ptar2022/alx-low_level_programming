@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
-
-/*
+/**
 * print_alphabet_x10 - Prints the alphabet 10 times to the stdout
 * @c:The alphabet characters
 * Return 0 on success
@@ -11,7 +10,7 @@
 void print_alphabet_x10(void)
 {
     char c;
-    int i = 0;
+    int i = 1;
 
     while (i <= 10)
     {
