@@ -3,8 +3,7 @@
 #include "main.h"
 
 /*
-* print_alphabet - The function doing the task
-*
+* print_alphabet - TCheck the condition
 * @c: The character printer
 * Return: Nothing returned
 */

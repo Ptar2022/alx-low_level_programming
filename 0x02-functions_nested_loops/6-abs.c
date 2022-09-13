@@ -3,8 +3,8 @@
 
 /*
 * _abs - Checks the absolute value of the number
-*
-*
+* @c:The checked number
+* Return - Integer value
 */
 
 int _abs(int c)
