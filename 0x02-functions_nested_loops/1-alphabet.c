@@ -1,8 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "main.h"
-/*
- * print_alphabet - TCheck the condition
+/**
+ * print_alphabet - Check the condition
  * @c: The character printer
  * Return: Nothing returned
  */
