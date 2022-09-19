@@ -2,10 +2,8 @@
 #include "main.h"
 
 /**
- *
- *
- *
- *
+ * swap_int - Swaps two integers
+ * Return: Nothing
  */
 
 void swap_int(int *a, int *b)
