@@ -1,6 +1,7 @@
 #include "main.h"
 
-/**puts2 - Puts the string alternatively
+/**
+ * puts2 - Puts the string alternatively
  * @str: The string
  * Return void
  *
