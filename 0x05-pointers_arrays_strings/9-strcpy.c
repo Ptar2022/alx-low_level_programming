@@ -7,7 +7,6 @@
  * @src: The source
  * Return: A character pointer
  */
-
 char *_strcpy(char *dest, char *src)
 {
     int i = 0;
@@ -18,5 +17,4 @@ char *_strcpy(char *dest, char *src)
         i = i + 1;
     }
     return dest;
-
 }
