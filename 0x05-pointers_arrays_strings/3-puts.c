@@ -3,7 +3,7 @@
 
 /**
  * _puts - Prints character in a astring
- *
+ * @str:The string to be printed
  *
  * Return: Nothing
  */
