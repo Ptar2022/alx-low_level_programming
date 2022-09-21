@@ -16,10 +16,10 @@ int main(void)
     int i;
 
     srand((unsigned int) time(NULL));
-    for (i = 0, i < 10; i++)
+    for (i = 0; i < 10; i++)
     {
         password[i] = characters[rand() % strlen(characters)];
         printf("%c", password[i]);
     }
-    return (0)
+    return (0);
 }
