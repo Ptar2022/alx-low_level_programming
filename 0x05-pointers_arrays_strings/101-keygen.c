@@ -43,8 +43,9 @@ int main(void)
         {
             password[i] = uppers[rand() % strlen(uppers)];
         }
-	password[i] = '\0';
-        printf("%c", password[i]);
+	    
     }
+    password[i] = '\0';
+    printf("%c", password[i]);
     return (0);
 }
