@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdioa.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -19,7 +19,6 @@ int main(void)
     char lowers[] = "abcdefghijklmnopqrstuvwxyz";
     char uppers[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-    //char characters [] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+";
     char password[10];
     int i;
 
@@ -44,8 +43,6 @@ int main(void)
         {
             password[i] = uppers[rand() % strlen(uppers)];
         }
-        //password[i] = characters[rand() % strlen(characters)];
-        
         printf("%c", password[i]);
     }
     return (0);
