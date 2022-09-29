@@ -1,24 +1,24 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include "main.h"
+nclude "main.h"
 
 /**
- * _strlen_recursion - Returns the length of a string
- *
- * @s: The string to check
- * Return: The length
+ * _strlen_recursion - works out the length of the line
+ * @s: the string varible to count
+ * Return: integer value
  *
  */
+
 int _strlen_recursion(char *s)
 {
-	int i = 0;
-	int count = 0;
 
-	while (s[i] != '\0')
+	if (*s == '\0')
 	{
-		count += 1;
-		i = i + 1;
+		return (0);
 	}
-	return count;
+
+	else
+	{
+		return (1 + _strlen_recursion(s + 1));
+	}
 }
+
 
