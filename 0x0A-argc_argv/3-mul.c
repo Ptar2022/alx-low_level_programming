@@ -1,32 +1,26 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
-  * main - Prints the multiplication of two args numbers
-  * @argc: argument count
-  * @argv: argument vector
-  *
-  * Return: Always zero
-  */
-int main(int argc, char *argv[])
+ * main - Multiply 2 number if that numbers are digits.
+ * @argc: Size of my Array of arrays
+ * @argv: Position in my main array.
+ * Return: Always is 0 if is succes.
+ */
+int main(int argc, char **argv)
 {
-int n1 = 0, n2 = 0;
+	int a, res;
 
-if (argc == 3)
-{
-n1 = atoi(argv[1]);
-n2 = atoi(argv[2]);
-printf("%d\n", n1 * n2);
+	res = 1;
+	if (argc > 2)
+	{
+		for (a = 1; a < argc; a++)
+		{
+			res = res * atoi(argv[a]);
+		}
+		printf("%d\n", res);
+	}
+	else
+		printf("Error\n");
+	return (0);
 }
-else
-{
-printf("Error\n");
-return (1);
-}
-
-return (0);
-}
-
-
-
