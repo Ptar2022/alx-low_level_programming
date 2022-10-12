@@ -1,13 +1,13 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
- * main - Gives the name of the executed file
- * Return always 0 for success else 1
+ * main - prints the name of the file it was compiled from
+ *
+ * Return: Everything worked ok
  */
 
-int main(int argc, char **argv)
+int main(void)
 {
-	printf("The executed filename is %s .\n", argv[0]);
+	printf("%s\n", __BASE_FILE__);
 	return (0);
 }
