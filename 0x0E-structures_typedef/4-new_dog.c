@@ -1,52 +1,50 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include "dog.h"
-#include <string.h>
-
 
 /**
-  * new_dog - The new dog pointer
-  * @name: Dog's name
-  * @age: Dog's age
-  * @owner: The dog owner
-  *
-  * Return: Nothing to return
-  */
+ * new_dog - creates a new dog
+ * @name: dog's name
+ * @age: dog's age
+ * @owner: dog's owner
+ *
+ * Return: a pointer to the structure
+ */
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *cutie_dog;
-	int name_l = 0, own_l = 0;
+	int i, j, k;
+	dog_t *p;
 
-	if (name != NULL && owner != NULL)
+	p = malloc(sizeof(dog_t));
+
+	if (p == NULL)
 	{
-		name_l = strlen(name) + 1;
-		own_l = strlen(owner) + 1;
-		cutie_dog = malloc(sizeof(dog_t));
-
-	if (cutie_dog == NULL)
-		return (NULL);
-
-	cutie_dog->name = malloc(sizeof(char) * name_l);
-
-	if (cutie_dog->name == NULL)
-	{
-		free(cutie_dog);
+		free(p);
 		return (NULL);
 	}
+	for (i = 0; name[i]; i++)
+		;
+	for (j = 0; owner[j]; j++)
+		;
+	p->name = malloc(i + 1);
+	p->owner = malloc(j + 1);
 
-	cutie_dog->owner = malloc(sizeof(char) * own_l);
-
-	if (cutie_dog->owner == NULL)
+	if (p->name == NULL || p->owner == NULL)
 	{
-		free(cutie_dog->name);
-		free(cutie_dog);
+		free(p->name), free(p->owner), free(p);
 		return (NULL);
 	}
-
-	cutie_dog->name = strcpy(cutie_dog->name, name);
-	cutie_dog->owner = strcpy(cutie_dog->owner, owner);
-	cutie_dog->age = age;
+	for (k = 0; k < i; k++)
+	{
+		p->name[k] = name[k];
 	}
-
-	return (cutie_dog);
+	p->name[k] = '\0';
+	for (k = 0; k < j; k++)
+	{
+		p->owner[k] = owner[k];
+	}
+	p->owner[k] = '\0';
+	p->age = age;
+	return (p);
 }
-
